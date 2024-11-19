@@ -5,7 +5,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "backend" {
   name     = "terraform-backend-rg"
-  location = "eastus"
+  location = var.location
 }
 
 resource "azurerm_storage_account" "backend" {
